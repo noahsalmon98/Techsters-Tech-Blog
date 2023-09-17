@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Techsters</title>
+</head>
+
+<body>
+  <header>
+    <h1>Techsters</h1>
+  </header>
+ 
+  <nav>
+    <a href="/">Home</a>
+    {{#if loggedIn}}
+    <a class="login-status">Logged in as: {{user}}</a>
+    <button id="logout" class="btn-no-style">Logout</button>
+    {{else}}
+    <a href="">Login</a>
+    <a href="">Sign up</a>
+    {{/if}}
+
+  </nav>
+
+{{{body}}}
+
+{{#if loggedIn}}
+<script src="">Log Out</script>
+{{/if}}
+</body>
+
+
+
+  
+  
