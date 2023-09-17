@@ -1,0 +1,23 @@
+<div class="main-feed">
+  <section class="">
+        {{#each post}}
+        <div class="columns-1">
+        {{> post-details}}
+        </div>
+          
+      {{/each}}
+  </section>
+</div>
+    <aside>
+      {{!-- on the right side of the page, viewers can create a new post --}}
+      <h2>Create New Post</h2>
+      <div class="">
+      <form class="newpost addpost">
+        <input  class='item' type="text" id="title" placeholder="Title">
+        <input  class='item caption' type="text" id="text" placeholder="Post Message">
+         <button type="submit" class="createbutton buttons">Create Post</button>
+      </form>
+      </div>
+    </aside>
+  </script>
+ 
